@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Efecto hover.css">
+    <title>Mundo Autos</title>
+    <style>
+        /* Reinicio de márgenes */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo general */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: #000000;
+            color: rgb(255, 34, 34);
+        }
+
+        /* Barra de navegación */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, #820808, #33AEFF);
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .navbar .menu {
+            display: flex;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+        .navbar a:hover {
+            background: #003a7a;
+        }
+
+        /* Fondo con GIF */
+        .hero {
+            background: url(https://i.pinimg.com/originals/b4/52/d0/b452d0874b30aa6e26393aeec5846881.gif) no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .hero-buttons {
+            margin-top: 20px;
+        }
+        .hero-buttons a {
+            text-decoration: none;
+            color: #fff;
+            background: #820808;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background 0.3s;
+        }
+        .hero-buttons a:hover {
+            background: #33AEFF;
+        }
+
+        /* Contenedor de tarjetas */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 {
+            font-size: 1.5rem;
+            margin: 1rem;
+            color: #000;
+        }
+        .card p {
+            margin: 0 1rem 1rem;
+            color: #666;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="logo">Mundo Autos</div>
+        <div class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Modelos</a>
+            <a href="#">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Fondo con GIF y botones -->
+    <section class="hero">
+        <h2>Disfruta el cambio de coche</h2>
+        <div class="hero-buttons">
+            <a href="#">interiores</a>
+            <a href="#">Otos servivias</a>
+        </div>
+    </section>
+
+    <!-- Títulos y tarjetas -->
+    <div class="container">
+        <header>
+            <h1 style="text-align: center;">Nuestros Servicios</h1>
+        </header>
+        <div class="cards">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/66/6b/30/666b30313a4617387fd86cb1c2b1f729.jpg" alt="Servicio 1">
+                <h3>NISAN ESCAYLAN</h3>
+                <p>Motor V8 con diseño rápido y furioso 1.</p>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/65/60/18/6560185598e6f6dfe38731c7e4972f42.jpg" alt="Servicio 2">
+                <h3>TOYOTA SUPRA</h3>
+                <p>Motor V10 con escapes delanteros con terminación GR.</p>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/64/fe/be/64febea63a73e4e51d6c99e619daf944.jpg" alt="Servicio 3">
+                <h3>FORD RTX</h3>
+                <p>Motor V8 twin-turbo sobrealimentado.</p>
+            </div>
+        </div>
+    </div>
+<body>
+            <div class="contenido">
+                <h2>Playa</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestias, ratione iste facilis numquam, possimus autem eius delectus repellat quasi quis et odit esse laboriosam nobis aliquid? Quae, possimus culpa.
+                </p>
+                <a href="https://www.senatorpuertoplatasparesort.com/es/playas-republica-dominicana/">Leer mas</a>
+            </div>
+        </div>
+    </div>
+</body>
+<body>
+        
+    <div class="container">
+        <div class="card">
+            <img src="https://i.pinim
+            +
+            g.com/736x/ce/db/d0/cedbd01d41f6ca4f1ae33a74e2843fc4.jpg"   width="600"  height="600"   alt="">
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/16/0b/34/160b3445f9aac9cfec5e02d2f35bd7f7.jpg" width="600"  height="600"    alt="">
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/99/66/ff/9966ffa1f26c8e082bef49c710fdec0e.jpg"  width="600"  height="600"  " alt="">
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/83/0d/65/830d6508feb7f9dee2543f16096f319b.jpg"  width="600"  height="600"    alt="">
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/1c/d8/76/1cd8760cdc6382dab0d5fb97d72fa48f.jpg" width="600"  height="600"    alt="">
+        </div>
+    </div>
+</body>
+    <!-- Pie de página -->
+    <footer>
+        <p>©️ 2025 Mundo Autos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
